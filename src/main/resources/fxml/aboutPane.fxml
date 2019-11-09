@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/11.0.1">
+    <children>
+        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0"
+                  text=
+                          "Project name: GitBit
+                           &#10;Program version: v1.0
+                           &#10;GitBit (version v1.0) was finished: 2019-08-26
+                           &#10;Program was created by: Andrzej Kamiński
+
+                           &#10;&#10;Libraries used:
+                           &#10;http://javamusictag.sourceforge.net/
+                           &#10;https://aalmiray.github.io/ikonli/
+
+                           &#10;&#10;All rights reserved"
+
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+    </children>
+</AnchorPane>

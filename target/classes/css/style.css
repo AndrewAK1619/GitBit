@@ -1,0 +1,358 @@
+#main-pane {
+    -fx-background-color: #15141b;
+    -fx-background-image: url("../img/mainBackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+}
+
+#button-minimize {
+    -fx-background-image: url("../img/top-minus.png");
+    -fx-background-size: 40% 1px;
+    -fx-background-position: center 70%;
+}
+
+#button-maximize {
+    -fx-background-image: url("../img/top-square.png");
+    -fx-background-size: 40%;
+}
+
+#button-maximize-change {
+    -fx-background-image: url("../img/top-shrink.png");
+    -fx-background-size: 40%;
+}
+
+#button-close {
+    -fx-background-image: url("../img/top-close.png");
+    -fx-background-size: 40%;
+}
+
+#button-prev {
+    -fx-cursor: hand;
+}
+
+#button-play {
+    -fx-cursor: hand;
+}
+
+#button-next {
+    -fx-cursor: hand;
+}
+
+#volume-up {
+    -fx-icon-color: rgba(255, 255, 255, 0.6);
+    -fx-icon-size: 28px;
+}
+
+.content-pane{
+    -fx-border-color:
+        #15141b
+        #15141b
+        #15141b
+        #15141b;
+    -fx-border-width: 3px;
+}
+
+* {
+    -fx-my-menu-bar-color: transparent;
+    -fx-my-menu-color: #15141b;
+    -fx-my-menu-color-highlighted: rgba(255, 255, 255, 0.1);
+    -fx-my-menu-font-color: #b1afb6;
+    -fx-my-menu-font-color-highlighted: white;
+}
+
+.menu-bar {
+    -fx-background-color: -fx-my-menu-bar-color;
+}
+
+.menu-bar > .container > .menu-button {
+    -fx-background-color: -fx-my-menu-bar-color;
+    -fx-cursor: hand;
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+.menu-item {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+.menu-item .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+.menu-item .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+.context-menu {
+    -fx-background-color: -fx-my-menu-color;
+    -fx-cursor: hand;
+}
+
+.main-bar {
+    -fx-background-color: #15141b;
+}
+
+.create-new-play-list {
+    -fx-font-family: "Segoe UI Regular";
+    -fx-text-fill: #11ba17;
+    -fx-padding: 6 15 6 15;
+    -fx-opacity: 1;
+    -fx-cursor: hand;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b1afb6;
+    -fx-padding: 6 15 6 15;
+}
+
+.list-cell:even {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b1afb6;
+}
+
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #8e8b97;
+    -fx-cursor: hand;
+}
+
+.list-view .scroll-bar:horizontal,
+.list-view .scroll-bar:vertical {
+    -fx-background-color:transparent;
+    -fx-padding: 0.1;
+    -fx-background-insets: 0.1;
+    -fx-border-insets: 0.1;
+    -fx-opacity: 0;
+}
+
+.list-view:hover .scroll-bar:horizontal,
+.list-view:hover .scroll-bar:vertical {
+    -fx-opacity: 0.1;
+}
+
+.list-view .increment-button,
+.list-view .decrement-button {
+    -fx-border-width: 0;
+    -fx-width: 0;
+    -fx-height: 0;
+    -fx-opacity: 0;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.list-view .scroll-bar:horizontal .track ,
+.list-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(transparent,80%);
+}
+
+.table-view-no-item {
+    -fx-base: #15141b;
+    -fx-control-inner-background: #15141b;
+    -fx-background-image: url("../img/contentTableBackground.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view-no-item .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view-no-item .column-header,
+.table-view-no-item .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 0.3 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(#6e6d70, 2%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view-no-item .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #b2b2b3;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view-no-item:focused .table-row-cell,
+.table-view-no-item:row-selection .table-row-cell {
+    -fx-text-fill: #6e6d70;
+}
+
+.table-view-no-item:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-text-fill: white;
+}
+
+.table-view-no-item:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-text-fill: #8e8b97;
+}
+
+.table-view-with-item {
+    -fx-base: #15141b;
+    -fx-control-inner-background: #15141b;
+    -fx-background-color: #15141b;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view-with-item .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view-with-item .column-header,
+.table-view-with-item .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 0.3 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(#6e6d70, 2%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view-with-item .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #b2b2b3;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view-with-item:focused .table-row-cell,
+.table-view-with-item:row-selection .table-row-cell {
+    -fx-text-fill: #6e6d70;
+}
+
+.table-view-with-item:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-text-fill: white;
+}
+
+.table-view-with-item:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-text-fill: #8e8b97;
+}
+
+.slider {
+    -fx-cursor: hand;
+}
+
+
+.slider .thumb {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em;
+}
+
+-slider .slider-value {
+     -fx-fill: white;
+     -fx-stroke: black;
+}
+
+.slider > .track {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 6, 5, 4;
+}
+
+.transparent-background {
+    -fx-background-color: transparent;
+}
+
+.visible-background{
+        -fx-background-image: url("../img/visibleBackground.jpg");
+        -fx-background-repeat: no-repeat;
+        -fx-background-size: cover;
+}
+
+.message-text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-text-fill: white;
+}
+
+.all-label .text{
+    -fx-fill: #b1afb6;
+}
+
+.button,
+.toggle-button {
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 70% 70%;
+	-fx-background-color: transparent;
+	-fx-opacity: 70%;
+}
+
+.button:hover,
+.toggle-button:hover {
+	-fx-opacity: 100%;
+}
+
+.new-mp3-pane {
+    -fx-border-color: #595959;
+    -fx-border-width: 3px;
+}
+
+.new-mp3-text-field {
+    -fx-background-color: #adadad;
+    -fx-text-fill: black;
+}

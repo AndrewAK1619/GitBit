@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane minWidth="120.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.example.mp3player.controller.ListPaneController">
+    <children>
+        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="57.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true"
+                           VBox.vgrow="ALWAYS">
+                    <image>
+                        <Image url="@../img/logoGitBit.png"/>
+                    </image>
+                    <VBox.margin>
+                        <Insets top="8.0"/>
+                    </VBox.margin>
+                </ImageView>
+                <Button fx:id="createNewPlaylistButton" alignment="BASELINE_LEFT" mnemonicParsing="false"
+                        nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="170.0"
+                        styleClass="create-new-play-list" text=" Create new playlist" VBox.vgrow="NEVER">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0"/>
+                    </VBox.margin>
+                    <graphic>
+                        <FontIcon iconColor="#11ba17" iconLiteral="fa-plus-circle" iconSize="16"/>
+                    </graphic>
+                </Button>
+                <ListView fx:id="playListListView" styleClass="list-view" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets left="5.0" right="5.0"/>
+                    </VBox.margin>
+                </ListView>
+            </children>
+        </VBox>
+    </children>
+    <opaqueInsets>
+        <Insets right="5.0" top="5.0"/>
+    </opaqueInsets>
+    <cursor>
+        <Cursor fx:constant="DEFAULT"/>
+    </cursor>
+</AnchorPane>

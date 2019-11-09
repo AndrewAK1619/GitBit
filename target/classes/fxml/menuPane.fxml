@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pl.example.mp3player.controller.MenuPaneController">
+    <MenuBar maxHeight="28.0" minHeight="28.0" prefHeight="28.0" prefWidth="180.0" styleClass="menu-bar"
+             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+             AnchorPane.topAnchor="0.0">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem fx:id="fileMenuItem" mnemonicParsing="false" text="Open Mp3 File"/>
+            <MenuItem fx:id="dirMenuItem" mnemonicParsing="false" text="Open directory"/>
+            <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Quit"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About"/>
+        </Menu>
+
+    </MenuBar>
+    <ToolBar fx:id="mainToolBar" maxHeight="28.0" minHeight="28.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0"
+             styleClass="main-bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0"
+             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+        <items>
+            <Button id="button-close" fx:id="closeButton" mnemonicParsing="false" prefHeight="13.0" prefWidth="20.0">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <font>
+                    <Font size="1.0"/>
+                </font>
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+            </Button>
+            <Button id="button-maximize" fx:id="maximizeButton" mnemonicParsing="false"
+                    onAction="#maximizeButtonOnAction" prefHeight="13.0" prefWidth="13.0">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <font>
+                    <Font size="1.0"/>
+                </font>
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+            </Button>
+            <Button id="button-minimize" fx:id="minimizeButton" mnemonicParsing="false" prefHeight="13.0"
+                    prefWidth="13.0">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <font>
+                    <Font size="1.0"/>
+                </font>
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+            </Button>
+        </items>
+    </ToolBar>
+    <cursor>
+        <Cursor fx:constant="DEFAULT"/>
+    </cursor>
+</HBox>
