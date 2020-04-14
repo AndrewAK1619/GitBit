@@ -3,6 +3,10 @@
 
 A basic audio player for MP3 files. Uses JavaFX technologies.
 
+Libraries used:                            
+http://javamusictag.sourceforge.net/                            
+https://aalmiray.github.io/ikonli/    
+
 GitBit functionalities:
  - basic options (play, pause, volume control, simple menu)
  - can create your own playlists (playlists do not disappear when reopening the program)
@@ -13,4 +17,9 @@ GitBit functionalities:
  - playlists and songs removed with the delete button
  - information bar at the bottom of the program
 
-![Foto](./src/main/resources/img/logoGitBit.png) 
+<p align="center">
+  <img src="https://github.com/AndrewAK1619/GitBit/blob/master/src/main/resources/img/GitBitNoSongs.png">
+  <img src="https://github.com/AndrewAK1619/GitBit/blob/master/src/main/resources/img/GitBitWithSongs.png">
+</p>
+
+
