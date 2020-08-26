@@ -1,13 +1,8 @@
 # GitBit
 
+"GitBit" is a desktop app audio player for MP3 files. Uses JavaFX technologies.
 
-A basic audio player for MP3 files. Uses JavaFX technologies.
-
-Libraries used:                            
-http://javamusictag.sourceforge.net/                            
-https://aalmiray.github.io/ikonli/    
-
-GitBit functionalities:
+### GitBit functionalities:
  - basic options (play, pause, volume control, simple menu)
  - can create your own playlists (playlists do not disappear when reopening the program)
  - there are three ways to add mp3 files:
@@ -22,4 +17,20 @@ GitBit functionalities:
   <img src="https://github.com/AndrewAK1619/GitBit/blob/master/src/main/resources/img/GitBitWithSongs.png">
 </p>
 
+### Tech
 
+* [Java] - v12
+* [JavaFX] - v12
+* [Maven] - v3.6.3
+* [Java ID3 Tag Library] - v0.5.4
+* [ikonli] - v11.3.4
+
+### Todos
+
+ - Write Tests
+
+   [Java]: <https://www.java.com>
+   [JavaFX]: <https://openjfx.io/>
+   [Maven]: <https://maven.apache.org/>
+   [Java ID3 Tag Library]: <http://javamusictag.sourceforge.net/>
+   [ikonli]: <https://github.com/kordamp/ikonli>
